@@ -5,7 +5,7 @@ const closeBtn = document.getElementById('close')
 const sidebar = document.getElementById('sidebar')
 
 menuBtn.addEventListener('click', function () {
-    console.log('click');
+   
     sidebar.classList.toggle('sidebar-open')
     closeBtn.classList.toggle('d-block')
 })

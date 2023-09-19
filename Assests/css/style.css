@@ -74,9 +74,50 @@ sup {
 
 .sidebar-nav>li {
     padding: 8px 20px 8px 15px;
-    margin: 10px 12px;
+    margin: 4px 16px;
     color: #8898ce;
 
+}
+
+.profile {
+    position: absolute;
+    bottom: 33px;
+    left:17px;
+    background-color: #192c71;
+    /* padding: 4px 8px; */
+    padding-right: 30px;
+    width: 85%;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 13px;
+    cursor: pointer;
+}
+
+.profile:hover{
+    outline: 2px solid #fff;
+    /* transform: scale(1.1); */
+}
+.profile-c{
+     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.profile-head{
+    padding: 13px 13px;
+    border-radius: 50%;
+    background-color: #204ff0;
+   
+    text-align: center;
+}
+.profile-name {
+    color: #fff;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.profile-name > p {
+    color: #3e5194;
+    font-size: 14px;
 }
 
 .notify {
@@ -87,6 +128,11 @@ sup {
     margin-left: 5px;
 }
 
+.sidebar-nav>li:hover,.sidebar-nav>li:active, .sidebar-nav>li:focus {
+    background-color: #2050f3;
+    border-radius: 15px;
+    color: white !important;
+}
 .sactive {
     background-color: #2050f3;
     border-radius: 15px;
@@ -105,11 +151,28 @@ sup {
     border-radius: 10px;
 }
 
-.i-active {
+.notifications .card:hover,.notifications .card:active, .notifications .card:focus {
+    /* padding: 4px 15px; */
+    outline: 2px solid #4e74f5 !important;
+    border-radius: 18px;
+    color:#4e74f5 !important;
+}
+.notifications .card-body i:hover,.notifications .card-body i:active, .notifications .card-body i:focus {
+    /* padding: 4px 15px; */
+    outline: 2px solid #4e74f5 !important;
+    border-radius: 18px;
+    color:#4e74f5 !important;
+}
+
+.try .card :hover{
+    color:#4e74f5 !important;
+}
+/* .i-active {
     padding: 4px 15px;
     border: 2px solid #4e74f5 !important;
     border-radius: 18px;
-}
+    color:#4e74f5;
+} */
 
 .card-body>i {
     padding: 4px 15px;
@@ -140,19 +203,23 @@ sup {
     font-size: 18px;
     padding-bottom: 10px;
     color: #abafb6;
+    border-bottom: 4px solid #efeff2;
 }
 
+.msgList>li:first-child{
+    color: #000;
+    border-bottom: 4px solid #9cb0f2;
+}
 
-
-.msgList>li:first-child {
+.msgList>li:hover, .msgList>li:active, .msgList>li:focus {
     color: #000;
     border-bottom: 4px solid #9cb0f2;
 }
 
 .msg-card,
 .pipe-card {
-    min-height: 414px;
-    max-height: 414px;
+    min-height: 410px;
+    max-height: 410px;
 }
 
 .emails span {
@@ -181,23 +248,31 @@ sup {
     border: 2px dashed #f3c4fe;
 }
 
-fieldset {
+.msg-single-card:hover,.msg-single-card:focus, .msg-single-card:active {
+    outline: 2px dashed #f3c4fe !important;
+
+}
+
+/* .msg-card .card-body >.row: */
+/* fieldset {
     border: 2px dashed #f3c4fe !important;
     border-top-color: black; 
     box-sizing: border-box; 
-    grid-area: 1 / 1; /* first row, first column */
+    grid-area: 1 / 1; 
     padding: 10px 0 !important; 
     width: inherit; 
     
 
   }
 
+  
+
   legend {
     display: inline-block!important;
     width: auto !important;
     color:#f3c4fe !important;
     font-size: 14px !important;
-  }
+  } */
 
 
 .card-body .red-nim {
@@ -277,6 +352,9 @@ fieldset {
         width:  58% !important;
     }
 
+    .single-card-1 {
+        margin-top: 40px;
+    }
 
     .navbar {
         width: 104% !important;
